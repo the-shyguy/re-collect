@@ -1,0 +1,26 @@
+{
+  "name": "re-collect",
+  "version": "1.0.0",
+  "description": "Desktop application to save copied clipboard data.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-shyguy/re-collect.git"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-shyguy/re-collect/issues"
+  },
+  "homepage": "https://github.com/the-shyguy/re-collect#readme",
+  "devDependencies": {
+    "electron": "^18.0.3"
+  },
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "vue": "^3.2.31"
+  }
+}
