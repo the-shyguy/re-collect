@@ -5,10 +5,13 @@ let tray = null;
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 400,
-    height: 600,
+    width: 300,
+    height: 400,
     frame: false,
     webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+      enableRemoteModule: false,
       preload: join(__dirname, "preload.js"),
     },
   });
@@ -19,7 +22,6 @@ function createWindow() {
   mainWindow.setPosition(bounds.y, bounds.x);
   mainWindow.hide();
 
-  console.log(tray.getBounds());
   tray.on("click", () => {
     if (mainWindow.isVisible()) {
       mainWindow.hide();

@@ -1,0 +1,46 @@
+html {
+    overflow: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0.75rem 1rem;
+    background-color: #16a34a;
+    color: white;
+    font-weight: 400;
+}
+
+.icon {
+    color:#ef4444;
+}
+
+.item  {
+    padding: 0.8rem 0.5rem;
+    border-bottom: 2px solid #d1d5db;
+    color: #4b5563;
+    margin: 0 0.2rem 0 0.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    overflow-x: scroll;
+}
+
+.item:hover {
+    background-color: #e5e7eb;
+}
+
+.date {
+    margin-top: 0.5rem;
+    display: block;
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
