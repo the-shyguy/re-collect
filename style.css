@@ -7,21 +7,18 @@ html {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
 .title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 0.75rem 1rem;
-    background-color: #16a34a;
+    background-color: #333C83;
     color: white;
     font-weight: 400;
-}
-
-.icon {
-    color:#ef4444;
 }
 
 .item  {
@@ -43,4 +40,14 @@ html {
     display: block;
     font-size: 0.8rem;
     color: #9ca3af;
+}
+
+svg {
+    height: 20px;
+    fill: #fff;
+    transition: fill 0.2s ease;
+}
+
+svg:hover {
+    fill: #ef4444;
 }

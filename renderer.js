@@ -23,11 +23,13 @@ const App = new Vue({
     checkClipboard() {
       const text = clipboard.readText();
       console.log(text);
-      if (
-        this.history[this.history.length - 1].text !== text &&
-        text.trim() !== ""
-      ) {
-        this.history.push({ text, clipped: new Date().toLocaleTimeString() });
+      if (this.history.length > 0) {
+        if (
+          this.history[this.history.length - 1].text !== text &&
+          text.trim() !== ""
+        ) {
+          this.history.push({ text, clipped: new Date().toLocaleTimeString() });
+        }
       }
     },
     itemClicked(item) {
@@ -37,6 +39,9 @@ const App = new Vue({
       }
       clipboard.writeText(item.text);
       window.scrollTo(0, 0);
+    },
+    clearHistory() {
+      this.history.splice(0, this.history.length);
     },
   },
 });
